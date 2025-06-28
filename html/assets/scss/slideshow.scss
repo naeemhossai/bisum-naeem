@@ -109,3 +109,9 @@
 .slide-content {
   max-width: 655px;
 }
+
+.slideshow-plant .slideshow-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}

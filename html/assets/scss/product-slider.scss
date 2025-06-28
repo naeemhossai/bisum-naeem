@@ -43,6 +43,11 @@
   display: block;
 }
 
+.product-slider-wrap.categroy-slider-plant {
+  --body-background-color: 255, 255, 255;
+  padding: 0;
+}
+
 .product-slider .swiper-pagination.slideshow-dots {
   bottom: -32px;
   display: flex;
@@ -263,6 +268,85 @@
 
 .section-product-slider .product-card {
   margin-top: 0;
+}
+
+// Product Card Plant
+
+.product-card-4 {
+    --body-background-color: 241, 241, 241;
+}
+
+.product-card-4 .card-action{
+    --body-background-color: 255, 255, 255;
+}
+
+.product-card-4 {
+    overflow: hidden;
+    background-color: rgba(var(--body-background-color), 1);
+}
+
+.product-card.product-card-4 .card-action{
+    position: absolute;
+    left: auto;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card.product-card-4 .button-quickview{
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.product-card.product-card-4:hover .button-quickview{
+    transform: translateY(0);
+}
+
+
+.product-card.product-card-4 .button-add-to-cart {
+    transform: translateY(30px);
+    transition: 0.6s;
+}
+
+.product-card.product-card-4:hover .button-add-to-cart{
+    transform: translateY(0);
+}
+
+.product-card.product-card-4:hover .card-action {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%);
+}
+
+.product-card-4 .product-card-details {
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    transition: all 0.3s;
+    z-index: 2;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+.product-card-4 .product-card-title {
+    margin: 0;
+}
+
+.product-card-4 .card-title  {
+    line-height: 0;
 }
 
 @media (max-width: 1279px) {
