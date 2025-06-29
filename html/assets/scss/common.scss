@@ -201,6 +201,26 @@ input[type="number"] {
   height: 22px;
 }
 
+.icon_14 {
+  width: 14px;
+  height: 14px;
+}
+
+.icon_24 {
+  width: 24px;
+  height: 24px;
+}
+
+.icon_16 {
+  width: 16px;
+  height: 16px;
+}
+
+.icon_40 {
+  width: 40px;
+  height: 40px;
+}
+
 // overlay
 .overlay-furniture,
 .overlay-tools,
@@ -357,6 +377,10 @@ body {
   font-weight: 500;
 }
 
+.semibold {
+  font-weight: 600;
+}
+
 .link-underline {
   text-decoration: underline;
   @include prefix(transition, all 0.3s ease, ms webkit spec);
@@ -372,37 +396,28 @@ body {
   justify-content: center;
 }
 
-.icon_14 {
-  width: 14px;
-  height: 14px;
-}
-
-.icon_24 {
-    width: 24px;
-    height: 24px;
-}
-
-.icon_16 {
-    width: 16px;
-    height: 16px;
-}
-
-.icon_40 {
-    width: 40px;
-    height: 40px;
-}
-
 .align-content-center {
   display: flex;
   align-items: center;
 }
 
 .row-gap-4 {
-    row-gap: 1.5rem!important;
+  row-gap: 1.5rem !important;
 }
 
 .overflow-y-hidden {
-    overflow-y: hidden!important;
+  overflow-y: hidden !important;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.flex-bannar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
 }
 // animation
 @keyframes upDown {
@@ -611,11 +626,11 @@ button,
 }
 
 // Swiper
-.home-section:hover .swiper-button-next.swiper-button-disabled.arrow-slider, 
+.home-section:hover .swiper-button-next.swiper-button-disabled.arrow-slider,
 .home-section:hover .swiper-button-prev.swiper-button-disabled.arrow-slider {
-    opacity: .35;
-    cursor: auto;
-    pointer-events: none;
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
 }
 
 // show second image on hover
