@@ -15,6 +15,14 @@
   @include prefix(border-bottom, 1px solid rgba(0, 0, 0, 0.1), ms webkit spec);
 }
 
+.border-btm-white {
+  @include prefix(
+    border-bottom,
+    1px solid rgba(255, 252, 255, 0.1),
+    ms webkit spec
+  );
+}
+
 .icon-user {
   width: 12px;
   height: 12px;
@@ -51,7 +59,7 @@
 
 .category-btn:hover,
 .category-list-item:hover {
-  --body-background-color: #000;
+  --body-background-color: #0363cd;
 }
 
 .category-submenu-item.has-image {
@@ -71,10 +79,17 @@
 
 .header-electronics .member-signup {
   height: 100%;
+  --btn-primary-color: #000;
+  --btn-primary-border-color: #f7f7f7;
+  --btn-primary-background-color: #f7f7f7;
 }
 
 .header-electronics .member-signup .btn-member {
   height: inherit;
+  color: var(--btn-primary-color);
+  border: 1px solid var(--btn-primary-border-color);
+  background-color: var(--btn-primary-background-color);
+  font-weight: var(--btn-primary-font-weight);
 }
 
 .header-electronics .field {
@@ -108,15 +123,21 @@
 
 .header-electronics .main-menu .menu-list-item.active .icon,
 .header-electronics .main-menu .menu-list-item:hover .icon {
-  --secondary-color: #f4f7f7;
+  --secondary-color: #d0d3d3;
   stroke: var(--secondary-color);
+}
+
+.header-electronics .main-menu .menu-list-item.active .nav-link,
+.header-electronics .main-menu .menu-list-item:hover .nav-link {
+  --secondary-color: #d0d3d3;
 }
 
 .header-electronics .img-menu-action:hover span,
 .header-electronics .main-menu .menu-list-item.active .nav-link,
 .header-electronics .main-menu .menu-list-item:hover .nav-link,
 .header-electronics .main-menu .nav-text-sub:hover,
-.header-electronics .header-category-widget .nav-link-sub:hover {
+.header-electronics .header-category-widget .nav-link-sub:hover,
+.offcanvas-electronics .main-menu .menu-list-item:hover > .mega-menu-header > .nav-link-sub {
   color: var(--secondary-color);
 }
 
@@ -176,11 +197,7 @@
 .category-btn:hover,
 .category-list-item:hover {
   background-color: var(--body-background-color);
-}
-
-.category-btn:hover,
-.category-list-item:hover {
-  --body-background-color: #000;
+  border: 1px solid #f7f7f7 !important;
 }
 
 .header-category-widget:hover > .category-list {
@@ -320,6 +337,16 @@
 .category-submenu-image img {
   height: auto;
   object-fit: cover;
+}
+
+@media (max-width: 1279px) {
+  .category-list-item {
+    padding: 20px 12px;
+  }
+
+  .category-btn {
+    padding: 0 12px;
+  }
 }
 
 // search

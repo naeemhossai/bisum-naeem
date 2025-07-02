@@ -167,8 +167,9 @@
 }
 
 .menu-tab-button.active {
-  outline: 1px solid;
-  outline-color: black;
+  outline: 1px solid #fff;
+  background-color: var(--secondary-color);
+  color: #fff;
 }
 
 .menu-tab-button {
@@ -180,6 +181,7 @@
   height: 52px;
   padding: 0 16px;
   border-radius: 6px;
+  outline: 1px solid var(--secondary-color) !important;
 }
 
 .mobile-cat-menu,

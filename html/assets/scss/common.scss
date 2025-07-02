@@ -388,10 +388,12 @@ body {
 
 .link-underline {
   text-decoration: underline;
+  text-decoration-color: #000 !important;
   @include prefix(transition, all 0.3s ease, ms webkit spec);
 
   &:hover {
     color: var(--secondary-color);
+  text-decoration-color: var(--secondary-color) !important;
     text-decoration: underline;
   }
 }

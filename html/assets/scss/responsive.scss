@@ -361,6 +361,10 @@
     font-weight: 500;
   }
 
+  .offcanvas-electronics .nav-text-sub {
+    font-size: 14px;
+  }
+
   .mega-menu-header {
     @include prefix(display, flex, ms webkit spec);
     @include prefix(align-items, center, ms webkit spec);
