@@ -386,6 +386,18 @@ body {
   font-weight: 600;
 }
 
+.link-underline.primary-color {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color) !important;
+  @include prefix(transition, all 0.3s ease, ms webkit spec);
+
+  &:hover {
+    color: var(--secondary-color);
+  text-decoration-color: var(--secondary-color) !important;
+    text-decoration: underline;
+  }
+}
+
 .link-underline {
   text-decoration: underline;
   text-decoration-color: #000 !important;

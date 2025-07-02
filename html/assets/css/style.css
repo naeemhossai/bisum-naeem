@@ -342,6 +342,20 @@ body {
 .semibold {
   font-weight: 600; }
 
+.link-underline.primary-color {
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--primary-color) !important;
+  text-decoration-color: var(--primary-color) !important;
+  -ms-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .link-underline.primary-color:hover {
+    color: var(--secondary-color);
+    -webkit-text-decoration-color: var(--secondary-color) !important;
+    text-decoration-color: var(--secondary-color) !important;
+    text-decoration: underline; }
+
 .link-underline {
   text-decoration: underline;
   -webkit-text-decoration-color: #000 !important;
