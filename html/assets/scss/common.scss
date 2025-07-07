@@ -184,6 +184,10 @@ iframe {
   @include prefix(justify-content, space-between, ms webkit spec);
 }
 
+.header-electronics .field {
+  background: #f7f7f7;
+}
+
 .field-input {
   width: 100%;
   font-size: 14px;

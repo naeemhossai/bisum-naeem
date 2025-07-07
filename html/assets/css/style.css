@@ -172,6 +172,9 @@ iframe {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
+.header-electronics .field {
+  background: #f7f7f7; }
+
 .field-input {
   width: 100%;
   font-size: 14px;
@@ -2575,7 +2578,7 @@ blockquote {
   margin-top: 24px; }
 
 .faq-electronics .faq-item {
-  background-color: #bfe0ff; }
+  background-color: #f7f7f7; }
 
 .faq-body {
   margin-bottom: 0;
